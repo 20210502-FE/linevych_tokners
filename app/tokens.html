@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Tokners</title>
 </head>
 
 <body>
     <header class="header">
+        <div class="header__bg"></div>
         <div class="header__inner">
             <div class="header__inner-bg"></div>
             <div class="header__wrapper flex flex_align-center">
@@ -53,24 +53,24 @@
                     </h1>
                     <div class="p-tokens__banner-discription">
                         <div class="p-tokens__banner-subtitle">Tknrs Token Distribution Schedule Total Supply:</div>
-                        <div class="p-tokens__banner-subtitle p-tokens__banner-text_yellow">10,000,000,000</div>
+                        <div class="p-tokens__banner-subtitle p-tokens__banner-subtitle_yellow">10,000,000,000</div>
                         <div class="p-tokens__banner-subtitle">Tknrs Tokens</div>
                     </div>
                     <div class="p-tokens__banner-content">
-                        <div class="p-tokens__banner-col">
+                        <div class="p-tokens__banner-col p-tokens__banner-col-content">
                             <div class="p-tokens__banner-text">Premined Tokens</div>
                             <div class="p-tokens__banner-text p-tokens__banner-text_blue">3,000,000,000</div>
                             <div class="p-tokens__banner-text">Tknrs Tokens</div>
                         </div>
-                        <div class="p-tokens__banner-col">
+                        <div class="p-tokens__banner-col p-tokens__banner-col-content">
                             <div class="p-tokens__banner-text">Daily Token Distribution</div>
                             <div class="p-tokens__banner-text p-tokens__banner-text_red">7,000,000,000</div>
                             <div class="p-tokens__banner-text">Tknrs Tokens</div>
                         </div>
-                        <div class="p-tokens__banner-img-wrapper">
+                        <div class="p-tokens__banner-col p-tokens__banner-img-wrapper">
                             <picture>
                                 <source srcset="assets/images/tokens_banner.png" media="(max-width: 600px)">
-                                <img class="logo__img" src="assets/images/tokens_banner2x.png" alt="Tokners">
+                                <img class="p-tokens__banner-img" src="assets/images/tokens_banner2x.png" alt="Tokners">
                             </picture>
                         </div>
                     </div>
@@ -83,12 +83,13 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
-
-                                </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="marking__small marking__small_green"></div>
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_green">
                                     Year 1
                                 </div>
+                            </div>
+                            <div class="p-tokens__prospect-date">
+                                Day 1 - Day 90
                             </div>
                             <div class="p-tokens__prospect-text">
                                 10M Tokens/Day
@@ -101,12 +102,13 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
-
-                                </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="marking__small marking__small_yellow"></div>
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_yellow">
                                     Year 1
                                 </div>
+                            </div>
+                            <div class="p-tokens__prospect-date">
+                                Day 90 - Day 365
                             </div>
                             <div class="p-tokens__prospect-text">
                                 5M Tokens/Day
@@ -119,10 +121,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_blue">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_blue">
                                     Year 2
                                 </div>
                             </div>
@@ -137,10 +139,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_red">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_red">
                                     Year 3
                                 </div>
                             </div>
@@ -155,10 +157,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_green">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_green">
                                     Year 4
                                 </div>
                             </div>
@@ -173,10 +175,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_yellow">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_yellow">
                                     Year 5
                                 </div>
                             </div>
@@ -191,10 +193,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_blue">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_blue">
                                     Year 6
                                 </div>
                             </div>
@@ -209,10 +211,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_red">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_red">
                                     Year 7
                                 </div>
                             </div>
@@ -227,10 +229,10 @@
                     <div class="p-tokens__prospect-col-wrapper">
                         <div class="p-tokens__prospect-col">
                             <div class="p-tokens__prospect-content flex">
-                                <div class="marking marking_small">
+                                <div class="marking__small marking__small_green">
 
                                 </div>
-                                <div class="p-tokens__prospect-year">
+                                <div class="p-tokens__prospect-year p-tokens__prospect-year_green">
                                     Year 8
                                 </div>
                             </div>
@@ -248,27 +250,94 @@
         <section class="p-tokens__proposal">
             <div class="p-tokens__proposal-bg"></div>
             <div class="wrapper">
-                <div class="p-tokens__proposal-content-wrapper">
-                    <div class="p-tokens__proposal-content">
-                        <h4 class="p-tokens__proposal-title">Proposal regarding Total Supply, ICO and Pricing Total
-                            Supply (after periodical increase of supply):</h4>
-                        <div class="p-tokens__proposal-num">10,000,000,000</div>
-                        <div class="p-tokens__proposal-subtitle">Tokens</div>
+                <div class="p-tokens__proposal-inner">
+                    <div class="p-tokens__proposal-content-wrapper">
+                        <div class="p-tokens__proposal-content">
+                            <h4 class="p-tokens__proposal-title">Proposal regarding Total Supply, ICO and Pricing Total
+                                Supply (after periodical increase of supply):</h4>
+                            <div class="p-tokens__proposal-num p-tokens__proposal-num_green">10,000,000,000</div>
+                            <div class="p-tokens__proposal-subtitle">Tokens</div>
+                        </div>
                     </div>
-                </div>
-                <div class="p-tokens__proposal-content-wrapper">
-                    <div class="p-tokens__proposal-content">
-                        <h4 class="p-tokens__proposal-title">Supply at Genesis:</h4>
-                        <div class="p-tokens__proposal-num">3,000,000,000</div>
-                        <div class="p-tokens__proposal-subtitle">Tokens</div>
-                        <div class="p-tokens__proposal-text">from the Genesis supply, 2,500,000,000 will be reserved for
-                            the ICO while 500,000,000 will be allocated for team members, founders and to onboard
-                            celebrities and influencers.</div>
+                    <div class="p-tokens__proposal-content-wrapper">
+                        <div class="p-tokens__proposal-content">
+                            <h4 class="p-tokens__proposal-title">Supply at Genesis:</h4>
+                            <div class="p-tokens__proposal-num p-tokens__proposal-num_yellow">3,000,000,000</div>
+                            <div class="p-tokens__proposal-subtitle">Tokens</div>
+                            <div class="p-tokens__proposal-text">from the Genesis supply, 2,500,000,000 will be reserved
+                                for
+                                the ICO while 500,000,000 will be allocated for team members, founders and to onboard
+                                celebrities and influencers.</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer__bg"></div>
+        <div class="wrapper">
+            <div class="footer__nav">
+                <nav class="nav">
+                    <ul class="nav__list footer__nav-list">
+                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                                href="team.html">Our
+                                team</a>
+                        </li>
+                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                                href="tokens.html">Tokens</a></li>
+                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline" href="#">Connect
+                                wallet</a>
+                        </li>
+                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                                href="#">Lightpaper</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__wrapper">
+                <div class="logo logo__footer">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img logo__img-footer" src="assets/images/logo-footer.png" alt="Tokners">
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/twitter.svg" alt="twitter"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/tel.svg" alt="telegram"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/inst.svg" alt="instagram"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/mail.svg" alt="mail"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/cat.svg" alt="cat"></a>
+                    </div>
+                    <div class="footer__social-circle">
+                        <a class="footer__social-link" href="#" target="_blank"><img class="footer__social-img"
+                                src="assets/icons/monkey.svg" alt="monkey"></a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-text">
+                        © 2021 Tokners. All rights reserved.
+                    </div>
+                    <div class="footer__copyright-author">
+                        Design by Oleg Kulik
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>

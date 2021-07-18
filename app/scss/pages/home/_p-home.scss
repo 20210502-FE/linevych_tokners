@@ -232,6 +232,7 @@
             display: flex;
 
         }
+
         &-img {
 
             &-wrapper {
@@ -346,7 +347,6 @@
 
         &-content {
             margin-bottom: 41px;
-
             
             &:nth-child(3) {
                 margin-bottom: 48px;
@@ -381,7 +381,6 @@
             & li {
                 list-style: decimal-leading-zero;
                 padding-left: 4px;
-
             }
 
             &_green {
@@ -547,6 +546,7 @@
             &-main {
                 overflow:hidden;
                 margin-top: -128px;
+
                 &::before {
                     content:"";
                     display:block;
@@ -661,8 +661,8 @@
             &_padding {
 
                 @include respond-to(big-desktop) {
-                padding-top: 61px;
-                padding-bottom: 0;
+                    padding-top: 61px;
+                    padding-bottom: 0;
                 }
             }
         }
@@ -784,7 +784,7 @@
 
             @include respond-to(big-desktop) {
                 margin-bottom: 69px;
-             }
+            }
         }
 
         &-text {

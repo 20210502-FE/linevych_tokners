@@ -24,6 +24,7 @@ img {
 .wrapper {
     max-width: calc(100% - 40px);
     margin: 0 auto;
+    z-index: 2;
 
     @include respond-to(desktop) {
         max-width: calc(100% - 80px);
@@ -35,7 +36,13 @@ img {
     @include respond-to(big-desktop) {
         max-width: calc(100% - 326px);
         margin: 0 auto;
-        
+    }
+
+    &_small {
+        @media screen and (max-width: 370px) {
+        max-width: calc(100% - 10px);
+        margin: 0 auto;
+        }
     }
 }
 
