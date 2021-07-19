@@ -459,8 +459,16 @@
             &-wrapper {
                 padding-left: 20px;
 
-                @media screen and (max-width:370px) {
+                @media screen and (max-width: 370px) {
                     padding-left: 0;
+                }
+
+                @media screen and (min-width: 1900px) {
+                    padding-left: 0;
+                }
+
+                @media screen and (min-width: 1911px) {
+                    padding-left: 20px;
                 }
             }
         }
@@ -973,6 +981,18 @@
             &_position {
                 
                 @include respond-to(desktop) {
+                    top: 232px;
+                    left: -280px;
+                    transform: rotate(360deg);
+                }
+
+                @media screen and (min-width: 1673px) {
+                    top: 55px;
+                    left: 477px;
+                    transform: rotate(270deg);
+                }
+
+                @media screen and (min-width: 1800px) {
                     top: 232px;
                     left: -280px;
                     transform: rotate(360deg);

@@ -1400,6 +1400,18 @@ body {
   }
 }
 
+@media screen and (min-width: 1900px) {
+  .p-home__weentar-img-wrapper {
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 1911px) {
+  .p-home__weentar-img-wrapper {
+    padding-left: 20px;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .p-home__weentar-heading {
     display: -webkit-box;
@@ -2014,6 +2026,26 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
+  .p-home__buy-arrow_position {
+    top: 232px;
+    left: -280px;
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 1673px) {
+  .p-home__buy-arrow_position {
+    top: 55px;
+    left: 477px;
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@media screen and (min-width: 1800px) {
   .p-home__buy-arrow_position {
     top: 232px;
     left: -280px;
