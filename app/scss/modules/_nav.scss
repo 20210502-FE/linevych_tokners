@@ -11,6 +11,11 @@
             flex-direction: column;
             text-align: right;
         }
+
+        &_active {
+            transform: translateY(-70px);
+            transition: all, 1s;
+        }
     }
 
     &__item {

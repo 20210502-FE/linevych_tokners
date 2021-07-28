@@ -23,8 +23,8 @@
     }
     
     &__inner {
-    position: relative;
-    z-index: 1;
+        position: relative;
+        z-index: 1;
     
         &-bg {
             background-image: url(../assets/images/banner-bg.png);
@@ -61,49 +61,6 @@
         justify-content: space-between;
     }
 
-    &__btn {
-        display: block;
-        width: 22px;
-        height: 14px;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-        position: relative;
-        left: 0;
-        top: 0;
-
-        @include respond-to(tablet-landscape) {
-            display: none;
-        }
-    
-        &_line {
-            width: 100%;
-            height: 2px;
-            background-color: $color-white;
-            position: absolute;
-            left: 0;
-            top: 6px;
-        }
-
-        &::before, &::after {
-            content: "";
-            position: absolute;
-            width: 22px;
-            height: 2px;
-            background-color: transparent;
-            left: 0;
-            background-color: $color-white;
-        }
-
-        &::before {
-            top: 0;
-        }
-        
-        &::after {
-            bottom: 0;
-        }
-    }
-
     &__nav {
         display: flex;
         align-items: center;
@@ -138,7 +95,58 @@
     }
 }
 
-.header__nav.header__nav--active {
-    transform: translateY(-70px);
-    transition: all, 1s;
+.menu {
+    display: block;
+    width: 22px;
+    height: 14px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+
+    @include respond-to(tablet-landscape) {
+        display: none;
+    }
+
+    &__line {
+        width: 100%;
+        height: 2px;
+        background-color: $color-white;
+        position: absolute;
+        left: 0;
+
+        &-top {
+            top: 0;
+            transition: ease-in .5s;
+
+            &_active {
+                transform: rotate(-45deg);
+                width: 22px;
+                top: 12px;
+                transition: ease-in .5s;
+            }
+        }
+
+        &-center {
+            top: 6px;
+            transition: ease-in .5s;
+
+            &_active {
+                display: none;
+                transition: ease-in .5s;
+            }
+        }
+
+        &-bottom {
+            bottom: 0;
+            transition: ease-in .5s;
+
+            &_active {
+                transform: rotate(45deg);
+                bottom: 0;
+                width: 22px;
+                transition: ease-in .5s;
+            }
+        }
+    }
 }
