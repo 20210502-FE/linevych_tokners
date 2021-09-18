@@ -13,7 +13,6 @@
     }
 
     &__bg {
-
         @include respond-to(desktop) {
             position: absolute;
             background-image: url(../assets/images/footer.png);
@@ -28,7 +27,6 @@
     }
 
     &__wrapper {
-
         @include respond-to(tablet-landscape) {
             display: flex;
             justify-content: space-between;
@@ -95,13 +93,16 @@
             align-items: center;
         }
 
+        &-link {
+            padding: 10px;
+        }
+
         &-img {
             max-width: 19px;
         }
     }
 
-    &__copyright {
-
+    &__copyrights {
         @include respond-to(desktop) {
             display: flex;
             flex-direction: column;

@@ -1,5 +1,4 @@
 .p-tokens {
-
     &__banner {
         padding-top: 15px;
         background-color: $color-ebony;
@@ -32,7 +31,7 @@
             }
         }
 
-        &-discription {
+        &-description {
             margin-bottom: 22px;
             
             @media screen and (min-width: 400px) {
@@ -128,8 +127,7 @@
             }
         }
 
-        &-col {
-
+        &-column {
             &-content {
                 max-width: 224px;
 
@@ -184,7 +182,6 @@
             }
 
             &:last-child {
-
                 @include respond-to(tablet-landscape) {
                     order: 2;
                 }
@@ -285,7 +282,7 @@
             }
         }
 
-        &-col {
+        &-column {
             background-color: $color-mirage;
             border-radius: 25px;
             width: 163px;

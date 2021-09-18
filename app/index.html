@@ -17,17 +17,17 @@
         <div class="header__inner">
             <div class="header__inner-bg"></div>
             <div class="header__wrapper flex flex_align-center">
-                <picture class="logo">
-                    <a class="logo__link" href="/">
+                <a class="logo__link" href="/">
+                    <picture class="logo">
                         <source srcset="assets/images/logo.png" media="(max-width: 1200px)">
                         <img class="logo__img" src="assets/images/logo2x.png" alt="Tokners">
-                    </a>
-                </picture>
+                    </picture>
+                </a>
                 <div class="header__content">
-                    <button class="menu" id="menuBtn">
-                        <div class="menu__line menu__line-top" id="menuLineTop"></div>
-                        <div class="menu__line menu__line-center" id="menuLineCenter"></div>
-                        <div class="menu__line menu__line-bottom" id="menuLineBottom"></div>
+                    <button class="burger-btn" id="burgerBtn">
+                        <div class="burger-btn__line burger-btn__line-top" id="burgerBtnLineTop"></div>
+                        <div class="burger-btn__line burger-btn__line-center" id="burgerBtnLineCenter"></div>
+                        <div class="burger-btn__line burger-btn__line-bottom" id="burgerBtnLineBottom"></div>
                     </button>
                     <div class="header__nav flex" id="navList">
                         <nav class="nav">
@@ -38,20 +38,20 @@
                                 <li class="nav__item"><a class="nav__link" href="#">Lightpaper</a></li>
                             </ul>
                         </nav>
-                        <div class="header__button">
-                            <a class="button" href="#">Sign In</a>
-                            <a class="button button_border-green" href="#">Sign Up</a>
+                        <div class="auth-btns">
+                            <a class="button auth-btns__burger-menu" href="#">Sign In</a>
+                            <a class="button button_border-green auth-btns__burger-menu" href="#">Sign Up</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <main class="p-home">
         <section class="p-home__banner">
             <div class="p-home__banner-inner flex flex_wrap">
                 <div class="p-home__banner-content">
-                    <div class="sup-title p-home__banner-sup-title">
+                    <div class="subtitle p-home__banner-subtitle">
                         At Tokners we are
                     </div>
                     <h1 class="title p-home__banner-title">
@@ -73,102 +73,89 @@
             </div>
         </section>
         <section class="p-home__info">
-            <div class="wrapper">
-                <div class="p-home__info-inner">
-                    <div class="p-home__info-wrapper">
-                        <div class="p-home__info-item">
-                            <div class="p-home__info-img-wrapper p-home__info-img_green">
-                                <img class="p-home__info-img" src="assets/images/crown.png" alt="circle">
-                            </div>
-                            <h4 class="title p-home__info-title">
-                                For <span class="p-home__info-title_green">Creators</span>
-                            </h4>
-                            <div class="text p-home__info-text text p-home__info-text_margin">
-                                Creators can gain independence through a decentralised digital currency system that
-                                is
-                                dependent on growing and engaging with the community and also their star power. They
-                                own
-                                10-15% of the total value of the tokens minted.
-                            </div>
-                            <a class="p-home__info-link p-home__info-link_green" href="#">Learn More<i
-                                    class="p-home__info-link-icon fas fa-arrow-right"></i></a>
+            <div class="wrapper p-home__info-inner">
+                <div class="p-home__info-column">
+                    <div class="p-home__info-item">
+                        <div class="p-home__info-img-wrapper p-home__info_green">
+                            <img class="p-home__info-img" src="assets/images/crown.png" alt="circle">
                         </div>
+                        <h4 class="title p-home__info-title">
+                            For <span class="p-home__info-title p-home__info-title_green">Creators</span>
+                        </h4>
+                        <div class="text p-home__info-text text p-home__info-text_margin">
+                            Creators can gain independence through a decentralised digital currency system that
+                            is
+                            dependent on growing and engaging with the community and also their star power. They
+                            own
+                            10-15% of the total value of the tokens minted.
+                        </div>
+                        <a class="p-home__info-link p-home__info-link_green" href="#">Learn More<i
+                                class="p-home__info-link-icon fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="p-home__info-wrapper">
-                        <div class="p-home__info-item">
-                            <div class="p-home__info-img-wrapper p-home__info-img_blue">
-                                <img class="p-home__info-img" src="assets/images/info-star.png" alt="star-in-circle">
-                            </div>
-                            <h4 class="title p-home__info-title">
-                                For <span class="p-home__info-title_blue">Holders</span>
-                            </h4>
-                            <div class="text p-home__info-text">
-                                Holding social tokens allows the individual to gain access to benefits including
-                                unreleased
-                                content, private communities, direct access to celebrity, early- access to tickets
-                                and more as well as the ability to trade with other communities in order to gain
-                                access to more creator content with early token buyers being the biggest winners as
-                                the value of the token increases with more buyers.
-                            </div>
-                            <a class="p-home__info-link p-home__info-link_blue" href="#">Learn More<i
-                                    class="p-home__info-link-icon fas fa-arrow-right"></i></a>
+                </div>
+                <div class="p-home__info-column">
+                    <div class="p-home__info-item">
+                        <div class="p-home__info-img-wrapper p-home__info_blue">
+                            <img class="p-home__info-img" src="assets/images/info-star.png" alt="star-in-circle">
                         </div>
+                        <h4 class="title p-home__info-title">
+                            For <span class="p-home__info-title p-home__info-title_blue">Holders</span>
+                        </h4>
+                        <div class="text p-home__info-text">
+                            Holding social tokens allows the individual to gain access to benefits including
+                            unreleased
+                            content, private communities, direct access to celebrity, early- access to tickets
+                            and more as well as the ability to trade with other communities in order to gain
+                            access to more creator content with early token buyers being the biggest winners as
+                            the value of the token increases with more buyers.
+                        </div>
+                        <a class="p-home__info-link p-home__info-link_blue" href="#">Learn More<i
+                                class="p-home__info-link-icon fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="p-home__benefit">
-            <picture class="p-home__benefit-img-wrapper">
+        <section class="p-home__benefits">
+            <picture class="p-home__benefits-img-wrapper">
                 <source srcset="assets/images/benefit-img.png" media="(max-width: 900px)">
-                <img class="p-home__benefit-img" src="assets/images/benefit-img2x.png" alt="figure-background">
+                <img class="p-home__benefits-img" src="assets/images/benefit-img2x.png" alt="figure-background">
             </picture>
-            <div class="p-home__benefit-content">
-                <h2 class="title p-home__benefit-title">
-                    What makes us different?
-                </h2>
-                <div class="p-home__benefit-subtitle">
+            <div class="p-home__benefits-content">
+                <h2 class="title p-home__benefits-title"> What makes us different?</h2>
+                <p class="p-home__benefits-subtitle">
                     We would only launch tokens with the express permission of the creators.
-                </div>
-                <div class="text p-home__benefit-text">
+                </p>
+                <p class="text p-home__benefits-text">
                     There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube
                     with followings in the millions who we would be actively engaging before we go viral.
-                </div>
-                <div class="text p-home__benefit-text">
+                </p>
+                <p class="text p-home__benefits-text">
                     We would get them on our
                     platform and they would see the opportunity to create a fan driven digital economy where their
                     digital content can be traded as NFTs and their most loyal fans can have the monetary value of
                     their creator's currency increase significantly as they promote their digital currency across
                     their channels while our native token holders benefit from the Weentar popularity.
-                </div>
+                </p>
             </div>
         </section>
         <section class="p-home__description">
-            <div class="p-home p-home__description_bg">
+            <div class="wrapper p-home__description p-home__description_bg">
                 <div class="p-home__description-wrapper">
-                    <div class="p-home__description-content">
-                        <div class="marking marking_dot marking_green">
-                            Q1
-                        </div>
-                        <div class="p-home__description-year">
-                            2021
-                        </div>
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_green">Q1</div>
+                        <div class="p-home__description-year">2021</div>
                         <ol class="p-home__description-list p-home__description-list_green">
                             <li>
-                                <p class="p-home__description-item">Team set-up
-                                </p>
+                                <p class="p-home__description-item">Team set-up</p>
                             </li>
                             <li>
                                 <p class="p-home__description-item">Launch of informational website</p>
                             </li>
                         </ol>
                     </div>
-                    <div class="p-home__description-content">
-                        <div class="marking marking_dot marking_blue">
-                            Q2
-                        </div>
-                        <div class="p-home__description-year">
-                            2021
-                        </div>
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_blue">Q2</div>
+                        <div class="p-home__description-year">2021</div>
                         <ol class="p-home__description-list p-home__description-list_blue">
                             <li>
                                 <p class="p-home__description-item">Presale and exchange listings</p>
@@ -187,18 +174,13 @@
                             </li>
                         </ol>
                     </div>
-                    <div class="p-home__description-content">
-                        <div class="marking marking_dot marking_yellow">
-                            Q3
-                        </div>
-                        <div class="p-home__description-year">
-                            2021
-                        </div>
+                    <div class="p-home__description-column">
+                        <div class="marking marking_dot marking_yellow">Q3</div>
+                        <div class="p-home__description-year">2021</div>
                         <ol class="p-home__description-list p-home__description-list_yellow">
                             <li>
                                 <p class="p-home__description-item p-home__description-item_small">Celebrity,
-                                    Creator
-                                    and Influencer partnerships</p>
+                                    Creator and Influencer partnerships</p>
                             </li>
                             <li>
                                 <p class="p-home__description-item p-home__description-item_small">Expansion of
@@ -212,7 +194,7 @@
                             </li>
                         </ol>
                     </div>
-                    <div class="p-home__description-content">
+                    <div class="p-home__description-column">
                         <div class="marking marking_dot marking_red">
                             Q4
                         </div>
@@ -250,9 +232,7 @@
                             <img class="logo__img logo__img_small" src="assets/images/logo_small.png" alt="Tokners">
                         </a>
                     </picture>
-                    <h2 class="title p-home__weentar-title">
-                        Weentar is coming
-                    </h2>
+                    <h2 class="title p-home__weentar-title">Weentar is coming</h2>
                 </div>
                 <div class="p-home__weentar-text-main">
                     <div class="text p-home__weentar-text p-home__weentar-text_bold">
@@ -297,97 +277,67 @@
                 </details>
             </div>
         </section>
-        <section class="p-home__detail">
+        <section class="p-home__phases">
             <div class="wrapper">
-                <h2 class="title p-home__detail-heading">
-                    Presale Details
-                </h2>
-                <div class="p-home__detail-wrapper">
-                    <div class="p-home__detail-column p-home__detail-column_closed">
-                        <div class="p-home__detail-content p-home__detail-content_one">
-                            <div class="marking marking_green p-home__detail-marking">
-                                01
+                <h2 class="title p-home__phases-heading">Presale Details</h2>
+                <div class="p-home__phases-wrapper">
+                    <div class="p-home__phases-column p-home__phases-column_hidden">
+                        <div class="p-home__phases-content p-home__phases-content_one">
+                            <div class="marking marking_green p-home__phases-marking">01</div>
+                            <div class="title p-home__phases-title">Phase One</div>
+                            <div class="p-home__phases-date">0/04/2021 - 16/04/2021</div>
+                            <div class="p-home__phases-text  p-home__phases-text_space">1 BNB = 100000 WNTR</div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Soft cap:</span> 5000 BNB
                             </div>
-                            <div class="title p-home__detail-title">
-                                Phase One
-                            </div>
-                            <div class="p-home__detail-date">
-                                0/04/2021 - 16/04/2021
-                            </div>
-                            <div class="p-home__detail-text  p-home__detail-text_space">
-                                1 BNB = 100000 WNTR
-                            </div>
-                            <div class="p-home__detail-text">
-                                <span class="p-home__detail-text_normal"> Soft cap:</span> 5000 BNB
-                            </div>
-                            <div class="p-home__detail-text">
-                                <span class="p-home__detail-text_normal"> Hard cap:</span> 10000 BNB
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Hard cap:</span> 10000 BNB
                             </div>
                         </div>
                     </div>
-                    <div class="p-home__detail-column p-home__detail-column_padding">
-                        <div class="p-home__detail-content  p-home__detail-content_two">
-                            <div class="marking marking_blue">
-                                02
+                    <div class="p-home__phases-column p-home__phases-column_pad-bot">
+                        <div class="p-home__phases-content  p-home__phases-content_two">
+                            <div class="marking marking_blue">02</div>
+                            <div class="title p-home__phases-title">Phase Two</div>
+                            <div class="p-home__phases-date">0/04/2021 - 16/04/2021</div>
+                            <div class="p-home__phases-text p-home__phases-text_space">1 BNB = 100000 WNTR</div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Soft cap:</span> 5000 BNB
                             </div>
-                            <div class="title p-home__detail-title">
-                                Phase Two
-                            </div>
-                            <div class="p-home__detail-date">
-                                0/04/2021 - 16/04/2021
-                            </div>
-                            <div class="p-home__detail-text p-home__detail-text_space">
-                                1 BNB = 100000 WNTR
-                            </div>
-                            <div class="p-home__detail-text">
-                                <span class="p-home__detail-text_normal"> Soft cap:</span> 5000 BNB
-                            </div>
-                            <div class="p-home__detail-text">
-                                <span class="p-home__detail-text_normal"> Hard cap:</span> 10000 BNB
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Hard cap:</span> 10000 BNB
                             </div>
                         </div>
                     </div>
-                    <div class="p-home__detail-column p-home__detail-column_closed">
-                        <div class="p-home__detail-content  p-home__detail-content_three">
-                            <div class="marking marking_yellow">
-                                03
+                    <div class="p-home__phases-column p-home__phases-column_hidden">
+                        <div class="p-home__phases-content  p-home__phases-content_three">
+                            <div class="marking marking_yellow">03</div>
+                            <div class="title p-home__phases-title">Phase Three</div>
+                            <div class="p-home__phases-date">0/04/2021 - 16/04/2021</div>
+                            <div class="p-home__phases-text p-home__phases-text_space">1 BNB = 100000 WNTR</div>
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Soft cap:</span> 5000 BNB
                             </div>
-                            <div class="title p-home__detail-title">
-                                Phase Three
-                            </div>
-                            <div class="p-home__detail-date">
-                                0/04/2021 - 16/04/2021
-                            </div>
-                            <div class="p-home__detail-text p-home__detail-text_space">
-                                1 BNB = 100000 WNTR
-                            </div>
-                            <div class="p-home__detail-text">
-                                <span class="p-home__detail-text_normal"> Soft cap:</span> 5000 BNB
-                            </div>
-                            <div class="p-home__detail-text">
-                                <span class="p-home__detail-text_normal"> Hard cap:</span> 10000 BNB
+                            <div class="p-home__phases-text">
+                                <span class="p-home__phases-text_normal"> Hard cap:</span> 10000 BNB
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="p-home__detail-dots">
-                    <div class="p-home__detail-dot"></div>
-                    <div class="p-home__detail-dot"></div>
-                    <div class="p-home__detail-dot"></div>
+                <div class="p-home__phases-dots">
+                    <span class="p-home__phases-dot"></span>
+                    <span class="p-home__phases-dot"></span>
+                    <span class="p-home__phases-dot"></span>
                 </div>
             </div>
         </section>
         <section class="p-home__buy">
             <div class="wrapper">
-                <h2 class="title p-home__buy-title">
-                    How to buy
-                </h2>
+                <h2 class="title p-home__buy-title">How to buy</h2>
                 <div class="p-home__buy-inner">
                     <div class="p-home__buy-column">
                         <div class="p-home__buy-column-wrapper">
-                            <div class="p-home__buy-num">
-                                01
-                            </div>
+                            <div class="p-home__buy-num">01</div>
                             <div class="p-home__buy-text">
                                 First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.
                             </div>
@@ -397,9 +347,7 @@
                     </div>
                     <div class="p-home__buy-column">
                         <div class="p-home__buy-column-wrapper">
-                            <div class="p-home__buy-num">
-                                02
-                            </div>
+                            <div class="p-home__buy-num">02</div>
                             <div class="p-home__buy-text">
                                 Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet
                             </div>
@@ -409,12 +357,9 @@
                     </div>
                     <div class="p-home__buy-column">
                         <div class="p-home__buy-column-wrapper">
-                            <div class="p-home__buy-num">
-                                03
-                            </div>
-                            <div class="p-home__buy-text">
-                                Then after you will received your $WNTR to your address within 24hours.
-                            </div>
+                            <div class="p-home__buy-num">03</div>
+                            <div class="p-home__buy-text">Then after you will received your $WNTR to your address within
+                                24hours.</div>
                         </div>
                     </div>
                 </div>
@@ -424,24 +369,21 @@
     <footer class="footer">
         <div class="footer__bg"></div>
         <div class="wrapper">
-            <div class="footer__nav">
-                <nav class="nav">
-                    <ul class="nav__list footer__nav-list">
-                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
-                                href="team.html">Our
-                                team</a>
-                        </li>
-                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
-                                href="tokens.html">Tokens</a></li>
-                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline" href="#">Connect
-                                wallet</a>
-                        </li>
-                        <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
-                                href="#">Lightpaper</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="nav footer__nav">
+                <ul class="nav__list footer__nav-list">
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline" href="team.html">Our
+                            team</a>
+                    </li>
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                            href="tokens.html">Tokens</a></li>
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline" href="#">Connect
+                            wallet</a>
+                    </li>
+                    <li class="nav__item footer__nav-item"><a class="nav__link nav__link_underline"
+                            href="#">Lightpaper</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="footer__wrapper">
                 <div class="logo logo__footer">
                     <a class="logo__link" href="/">
@@ -474,18 +416,15 @@
                                 src="assets/icons/monkey.svg" alt="monkey"></a>
                     </div>
                 </div>
-                <div class="footer__copyright">
-                    <div class="footer__copyright-text">
-                        © 2021 Tokners. All rights reserved.
-                    </div>
-                    <div class="footer__copyright-author">
-                        Design by Oleg Kulik
-                    </div>
+                <div class="footer__copyrights">
+                    <div class="footer__copyrights-text">© 2021 Tokners. All rights reserved.</div>
+                    <a href="#">
+                        <div class="footer__copyrights-author">Design by Oleg Kulik</div>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

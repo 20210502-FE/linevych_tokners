@@ -26,8 +26,16 @@ img {
     margin: 0 auto;
     z-index: 2;
 
-    @include respond-to(desktop) {
+    @include respond-to(tablet-portrait) {
         max-width: calc(100% - 80px);
+    }
+
+    @include respond-to(tablet-landscape) {
+        max-width: calc(100% - 120px);
+    }
+
+    @include respond-to(desktop) {
+        max-width: calc(100% - 180px);
         margin: 0 auto;
         position: relative;
         z-index: 3;
@@ -35,7 +43,6 @@ img {
 
     @include respond-to(big-desktop) {
         max-width: calc(100% - 326px);
-        margin: 0 auto;
     }
 
     &_small {
@@ -82,7 +89,7 @@ body {
     }
 }
 
-.sup-title {
+.subtitle {
     font-family: $font-bold;
     font-style: normal;
     font-weight: bold;
